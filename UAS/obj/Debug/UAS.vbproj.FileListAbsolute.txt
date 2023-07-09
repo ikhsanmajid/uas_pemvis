@@ -1,0 +1,25 @@
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\bin\Debug\UAS.exe.config
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\bin\Debug\UAS.exe
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\bin\Debug\UAS.pdb
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\bin\Debug\UAS.xml
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.index.resources
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.Resources.resources
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.vbproj.GenerateResource.Cache
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.exe
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.xml
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.pdb
+C:\Users\ikhsa\AppData\Local\Temporary Projects\UAS\obj\Debug\UAS.form_fnb.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\bin\Debug\UAS.exe.config
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.exe
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.xml
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.pdb
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\bin\Debug\UAS.exe
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\bin\Debug\UAS.pdb
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\bin\Debug\UAS.xml
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_fnb.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.index.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.Resources.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.vbproj.GenerateResource.Cache
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_fnb.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_error_client.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_client.resources
