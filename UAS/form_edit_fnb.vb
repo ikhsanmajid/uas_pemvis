@@ -16,21 +16,16 @@ Public Class form_edit_fnb
         con.Open()
     End Sub
 
-    Sub loadform(id As Integer)
-        TextBox1.Text = id.ToString
-        query = "SELECT * FROM makanan_minuman WHERE id=" & id
-        Try
-            koneksi()
-            cmd = New OdbcCommand(query, con)
-            Using reader As OdbcDataReader = cmd.ExecuteReader()
-                If reader.Read() Then
-                    MessageBox.Show(reader.GetString(1))
-                End If
-            End Using
+    Sub loadform(id As Integer, nama As String, jenis As String, harga As String, stok As Integer, status As String)
+        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
+        TextBox1.Text = id
+        TextBox2.Text = nama
+        ComboBox1.SelectedItem = jenis
+        TextBox3.Text = harga.ToString()
+        TextBox4.Text = stok
+        ComboBox2.SelectedItem = status
 
-        Catch ex As Exception
-
-        End Try
     End Sub
 
     Private Sub form_edit_fnb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,6 +34,41 @@ Public Class form_edit_fnb
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim id, stok, status As Integer
-        Dim harga As BigInteger
+        Dim nama, jenis, harga As String
+        id = TextBox1.Text
+        nama = TextBox2.Text
+        jenis = ComboBox1.SelectedItem
+        harga = TextBox3.Text
+        stok = TextBox4.Text
+
+        Select Case ComboBox2.SelectedItem
+            Case "masih"
+                status = 1
+            Case "habis"
+                status = 0
+        End Select
+
+        query = "UPDATE makanan_minuman SET nama=?, jenis=?, harga=?, stok=?, status=? WHERE id=?"
+        Try
+            koneksi()
+            Using cmd As New OdbcCommand(query, con)
+                cmd.Parameters.AddWithValue("@param1", nama)
+                cmd.Parameters.AddWithValue("@param2", jenis)
+                cmd.Parameters.AddWithValue("@param3", harga)
+                cmd.Parameters.AddWithValue("@param4", stok)
+                cmd.Parameters.AddWithValue("@param5", status)
+                cmd.Parameters.AddWithValue("@param6", id)
+                Dim rowAffected As Integer = cmd.ExecuteNonQuery()
+                If rowAffected > 0 Then
+                    MessageBox.Show("Data berhasil diubah")
+                    Me.Close()
+                    form_fnb.openAfterEdit()
+                Else
+                    MessageBox.Show("Data gagal diubah")
+                End If
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: ", ex.Message)
+        End Try
     End Sub
 End Class

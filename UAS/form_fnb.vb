@@ -38,11 +38,11 @@ Public Class form_fnb
                 status = 0
         End Select
 
-        stok = Integer.Parse(TextBox4.Text.ToString())
+        stok = Integer.Parse(TextBox3.Text.ToString())
 
-        nama = TextBox2.Text
+        nama = TextBox1.Text
         jenis = ComboBox1.Text
-        harga = TextBox3.Text
+        harga = TextBox2.Text
 
         Dim query As String = "INSERT INTO makanan_minuman (nama, jenis, harga, stok, status) VALUES (?,?,?,?,?)"
 
@@ -75,7 +75,9 @@ Public Class form_fnb
     Private Sub form_fnb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Set dropdown style
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox1.SelectedIndex = 0
         ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox2.SelectedIndex = 0
         'set width datagrid column
         DataGridView1.Columns(0).Width = 40 'id
         DataGridView1.Columns(1).Width = 480 'nama makanan
@@ -112,9 +114,19 @@ Public Class form_fnb
 
     'edit click context menu
     Private Sub EditRowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditRowToolStripMenuItem.Click
-        Dim selectedRowIndex As Integer
+        Dim selectedRowIndex, stok As Integer
+        Dim id, nama, jenis, status, harga As String
+
         selectedRowIndex = DataGridView1.CurrentRow.Index
-        form_edit_fnb.loadform(DataGridView1.Rows(selectedRowIndex).Cells(0).Value)
+
+        id = DataGridView1.Rows(selectedRowIndex).Cells(0).Value
+        nama = DataGridView1.Rows(selectedRowIndex).Cells(1).Value
+        jenis = DataGridView1.Rows(selectedRowIndex).Cells(2).Value
+        harga = DataGridView1.Rows(selectedRowIndex).Cells(3).Value
+        stok = DataGridView1.Rows(selectedRowIndex).Cells(4).Value
+        status = DataGridView1.Rows(selectedRowIndex).Cells(5).Value
+
+        form_edit_fnb.loadform(id, nama, jenis, harga, stok, status)
         Me.Hide()
         form_edit_fnb.Show()
     End Sub
@@ -124,5 +136,9 @@ Public Class form_fnb
         simpan()
     End Sub
 
+    Sub openAfterEdit()
+        loadTable()
+        Me.Show()
+    End Sub
 
 End Class
