@@ -24,7 +24,13 @@ Public Class form_edit_fnb
         ComboBox1.SelectedItem = jenis
         TextBox3.Text = harga.ToString()
         TextBox4.Text = stok
-        ComboBox2.SelectedItem = status
+
+        Select Case status
+            Case 1
+                ComboBox2.SelectedIndex = 0
+            Case 0
+                ComboBox2.SelectedIndex = 1
+        End Select
 
     End Sub
 
