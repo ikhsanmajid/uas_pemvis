@@ -40,6 +40,14 @@ Partial Class form_data_user
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
+        Me.dgvUser = New System.Windows.Forms.DataGridView()
+        Me.id_user = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jenis_kelamin = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.alamat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.password = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -152,7 +160,7 @@ Partial Class form_data_user
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(508, 307)
+        Me.btnExit.Location = New System.Drawing.Point(499, 314)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 38)
         Me.btnExit.TabIndex = 49
@@ -161,7 +169,7 @@ Partial Class form_data_user
         '
         'btnUlangi
         '
-        Me.btnUlangi.Location = New System.Drawing.Point(191, 307)
+        Me.btnUlangi.Location = New System.Drawing.Point(182, 314)
         Me.btnUlangi.Name = "btnUlangi"
         Me.btnUlangi.Size = New System.Drawing.Size(75, 38)
         Me.btnUlangi.TabIndex = 48
@@ -170,7 +178,7 @@ Partial Class form_data_user
         '
         'btnTambah
         '
-        Me.btnTambah.Location = New System.Drawing.Point(66, 307)
+        Me.btnTambah.Location = New System.Drawing.Point(57, 314)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(93, 38)
         Me.btnTambah.TabIndex = 47
@@ -179,7 +187,7 @@ Partial Class form_data_user
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(286, 307)
+        Me.btnRefresh.Location = New System.Drawing.Point(277, 314)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(89, 38)
         Me.btnRefresh.TabIndex = 50
@@ -188,18 +196,61 @@ Partial Class form_data_user
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(403, 307)
+        Me.btnDelete.Location = New System.Drawing.Point(394, 314)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 38)
         Me.btnDelete.TabIndex = 51
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
+        'dgvUser
+        '
+        Me.dgvUser.AllowUserToAddRows = False
+        Me.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvUser.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_user, Me.nama, Me.jenis_kelamin, Me.alamat, Me.username, Me.password})
+        Me.dgvUser.Location = New System.Drawing.Point(46, 414)
+        Me.dgvUser.Name = "dgvUser"
+        Me.dgvUser.ReadOnly = True
+        Me.dgvUser.RowTemplate.Height = 28
+        Me.dgvUser.Size = New System.Drawing.Size(864, 229)
+        Me.dgvUser.TabIndex = 52
+        '
+        'id_user
+        '
+        Me.id_user.HeaderText = "ID"
+        Me.id_user.Name = "id_user"
+        '
+        'nama
+        '
+        Me.nama.HeaderText = "Nama"
+        Me.nama.Name = "nama"
+        '
+        'jenis_kelamin
+        '
+        Me.jenis_kelamin.HeaderText = "Kelamin"
+        Me.jenis_kelamin.Name = "jenis_kelamin"
+        '
+        'alamat
+        '
+        Me.alamat.HeaderText = "Alamat"
+        Me.alamat.Name = "alamat"
+        '
+        'username
+        '
+        Me.username.HeaderText = "Username"
+        Me.username.Name = "username"
+        '
+        'password
+        '
+        Me.password.HeaderText = "Password"
+        Me.password.Name = "password"
+        '
         'form_data_user
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(958, 688)
+        Me.Controls.Add(Me.dgvUser)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnExit)
@@ -220,6 +271,7 @@ Partial Class form_data_user
         Me.Controls.Add(Me.Label1)
         Me.Name = "form_data_user"
         Me.Text = "Form Data User"
+        CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -242,4 +294,11 @@ Partial Class form_data_user
     Friend WithEvents btnTambah As System.Windows.Forms.Button
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents btnDelete As System.Windows.Forms.Button
+    Friend WithEvents dgvUser As System.Windows.Forms.DataGridView
+    Friend WithEvents id_user As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nama As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents jenis_kelamin As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents alamat As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents username As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents password As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

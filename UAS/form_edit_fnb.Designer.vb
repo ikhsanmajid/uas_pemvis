@@ -40,57 +40,64 @@ Partial Class form_edit_fnb
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(23, 20)
+        Me.Label5.Location = New System.Drawing.Point(34, 31)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
+        Me.Label5.Size = New System.Drawing.Size(62, 20)
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "ID F&&B"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(26, 36)
+        Me.TextBox1.Location = New System.Drawing.Point(39, 55)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(119, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(176, 26)
         Me.TextBox1.TabIndex = 34
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(23, 249)
+        Me.Label4.Location = New System.Drawing.Point(34, 383)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.Size = New System.Drawing.Size(42, 20)
         Me.Label4.TabIndex = 33
         Me.Label4.Text = "Stok"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(26, 93)
+        Me.TextBox2.Location = New System.Drawing.Point(39, 143)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(333, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(498, 26)
         Me.TextBox2.TabIndex = 26
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(26, 265)
+        Me.TextBox4.Location = New System.Drawing.Point(39, 408)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(148, 26)
         Me.TextBox4.TabIndex = 32
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(23, 77)
+        Me.Label1.Location = New System.Drawing.Point(34, 118)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Nama Item"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 192)
+        Me.Label3.Location = New System.Drawing.Point(34, 295)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(36, 13)
+        Me.Label3.Size = New System.Drawing.Size(53, 20)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Harga"
         '
@@ -98,32 +105,36 @@ Partial Class form_edit_fnb
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"makanan", "minuman", "snack", "rokok"})
-        Me.ComboBox1.Location = New System.Drawing.Point(26, 150)
+        Me.ComboBox1.Location = New System.Drawing.Point(39, 231)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(165, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(246, 28)
         Me.ComboBox1.TabIndex = 29
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(26, 208)
+        Me.TextBox3.Location = New System.Drawing.Point(39, 320)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(202, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(301, 26)
         Me.TextBox3.TabIndex = 30
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(23, 134)
+        Me.Label2.Location = New System.Drawing.Point(34, 206)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(82, 20)
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Jenis Item"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(267, 376)
+        Me.Button1.Location = New System.Drawing.Point(399, 591)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 23)
+        Me.Button1.Size = New System.Drawing.Size(138, 35)
         Me.Button1.TabIndex = 36
         Me.Button1.Text = "Update Data"
         Me.Button1.UseVisualStyleBackColor = True
@@ -132,25 +143,27 @@ Partial Class form_edit_fnb
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"masih", "habis"})
-        Me.ComboBox2.Location = New System.Drawing.Point(26, 320)
+        Me.ComboBox2.Location = New System.Drawing.Point(39, 492)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(131, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(194, 28)
         Me.ComboBox2.TabIndex = 38
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(23, 304)
+        Me.Label6.Location = New System.Drawing.Point(34, 468)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 13)
+        Me.Label6.Size = New System.Drawing.Size(56, 20)
         Me.Label6.TabIndex = 37
         Me.Label6.Text = "Status"
         '
         'form_edit_fnb
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(386, 440)
+        Me.ClientSize = New System.Drawing.Size(579, 677)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button1)
@@ -164,6 +177,7 @@ Partial Class form_edit_fnb
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "form_edit_fnb"
         Me.Text = "form_edit_fnb"
         Me.ResumeLayout(False)
