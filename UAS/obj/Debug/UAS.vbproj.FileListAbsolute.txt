@@ -23,3 +23,19 @@ C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.vbpro
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_fnb.resources
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_error_client.resources
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_client.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.exe.config
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.exe
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.xml
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.pdb
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.exe
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.pdb
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.xml
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_edit_client.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_edit_fnb.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_error_client.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_fnb.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_transaksi.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.index.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.Resources.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.vbproj.GenerateResource.Cache
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_data_user.resources

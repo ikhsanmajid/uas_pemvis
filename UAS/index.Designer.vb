@@ -31,59 +31,65 @@ Partial Class index
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(175, 254)
+        Me.Button1.Location = New System.Drawing.Point(262, 391)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(116, 45)
+        Me.Button1.Size = New System.Drawing.Size(174, 69)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Transaksi Warnet"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 254)
+        Me.Button2.Location = New System.Drawing.Point(39, 391)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 45)
+        Me.Button2.Size = New System.Drawing.Size(174, 69)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Data User"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(324, 254)
+        Me.Button3.Location = New System.Drawing.Point(486, 391)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(116, 45)
+        Me.Button3.Size = New System.Drawing.Size(174, 69)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Data Makanan"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(473, 254)
+        Me.Button4.Location = New System.Drawing.Point(710, 391)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(116, 45)
+        Me.Button4.Size = New System.Drawing.Size(174, 69)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Pesan F&&B"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(241, 324)
+        Me.Button5.Location = New System.Drawing.Point(362, 498)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(116, 45)
+        Me.Button5.Size = New System.Drawing.Size(174, 69)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "Status PC"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'index
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 411)
+        Me.ClientSize = New System.Drawing.Size(936, 632)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "index"
         Me.Text = "Form1"
         Me.ResumeLayout(False)

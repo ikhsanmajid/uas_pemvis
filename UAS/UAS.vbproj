@@ -11,7 +11,8 @@
     <AssemblyName>UAS</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,6 +81,12 @@
     <Compile Include="DataSet1.vb">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="form_data_user.Designer.vb">
+      <DependentUpon>form_data_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_data_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form_edit_client.Designer.vb">
       <DependentUpon>form_edit_client.vb</DependentUpon>
     </Compile>
@@ -102,6 +109,12 @@
       <DependentUpon>form_fnb.vb</DependentUpon>
     </Compile>
     <Compile Include="form_fnb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_transaksi.Designer.vb">
+      <DependentUpon>form_transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_transaksi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="index.vb">
@@ -128,6 +141,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="form_data_user.resx">
+      <DependentUpon>form_data_user.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_edit_client.resx">
       <DependentUpon>form_edit_client.vb</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form_fnb.resx">
       <DependentUpon>form_fnb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_transaksi.resx">
+      <DependentUpon>form_transaksi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.vb</DependentUpon>
@@ -172,6 +191,21 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_ls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_pb.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_pubg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_valorant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol_logo.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
