@@ -154,4 +154,23 @@ Public Class form_data_user
         tampil()
         Me.Show()
     End Sub
+
+    Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
+        Dim query As String = "SELECT * FROM data_user ORDER BY id_user ASC"
+        Try
+            report_data_user.DataSet1.Clear()
+            report_data_user.DataSet1.EnforceConstraints = False
+            koneksi()
+            da = New OdbcDataAdapter(query, con)
+            da.Fill(report_data_user.DataSet1.data_user)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        report_data_user.ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+        report_data_user.ReportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent
+        report_data_user.ReportViewer1.ZoomPercent = 100
+        report_data_user.ReportViewer1.RefreshReport()
+        report_data_user.Show()
+    End Sub
 End Class

@@ -49,6 +49,7 @@ Partial Class form_data_user
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.password = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnCetak = New System.Windows.Forms.Button()
         CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -162,7 +163,7 @@ Partial Class form_data_user
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(545, 314)
+        Me.btnExit.Location = New System.Drawing.Point(589, 290)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 38)
         Me.btnExit.TabIndex = 49
@@ -171,7 +172,7 @@ Partial Class form_data_user
         '
         'btnUlangi
         '
-        Me.btnUlangi.Location = New System.Drawing.Point(357, 314)
+        Me.btnUlangi.Location = New System.Drawing.Point(427, 290)
         Me.btnUlangi.Name = "btnUlangi"
         Me.btnUlangi.Size = New System.Drawing.Size(75, 38)
         Me.btnUlangi.TabIndex = 48
@@ -180,7 +181,7 @@ Partial Class form_data_user
         '
         'btnTambah
         '
-        Me.btnTambah.Location = New System.Drawing.Point(57, 314)
+        Me.btnTambah.Location = New System.Drawing.Point(57, 290)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(93, 38)
         Me.btnTambah.TabIndex = 47
@@ -189,7 +190,7 @@ Partial Class form_data_user
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(156, 314)
+        Me.btnRefresh.Location = New System.Drawing.Point(237, 290)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(89, 38)
         Me.btnRefresh.TabIndex = 50
@@ -198,7 +199,7 @@ Partial Class form_data_user
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(450, 314)
+        Me.btnDelete.Location = New System.Drawing.Point(508, 290)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 38)
         Me.btnDelete.TabIndex = 51
@@ -211,11 +212,11 @@ Partial Class form_data_user
         Me.dgvUser.AllowUserToDeleteRows = False
         Me.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvUser.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_user, Me.nama, Me.jenis_kelamin, Me.alamat, Me.username, Me.password})
-        Me.dgvUser.Location = New System.Drawing.Point(46, 414)
+        Me.dgvUser.Location = New System.Drawing.Point(46, 366)
         Me.dgvUser.Name = "dgvUser"
         Me.dgvUser.ReadOnly = True
         Me.dgvUser.RowTemplate.Height = 28
-        Me.dgvUser.Size = New System.Drawing.Size(864, 229)
+        Me.dgvUser.Size = New System.Drawing.Size(864, 321)
         Me.dgvUser.TabIndex = 52
         '
         'id_user
@@ -257,7 +258,7 @@ Partial Class form_data_user
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(659, 285)
+        Me.CheckBox1.Location = New System.Drawing.Point(685, 298)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(198, 24)
         Me.CheckBox1.TabIndex = 53
@@ -266,7 +267,7 @@ Partial Class form_data_user
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(251, 314)
+        Me.btnEdit.Location = New System.Drawing.Point(332, 290)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(89, 38)
         Me.btnEdit.TabIndex = 54
@@ -280,11 +281,21 @@ Partial Class form_data_user
         Me.password.ReadOnly = True
         Me.password.Visible = False
         '
+        'btnCetak
+        '
+        Me.btnCetak.Location = New System.Drawing.Point(156, 290)
+        Me.btnCetak.Name = "btnCetak"
+        Me.btnCetak.Size = New System.Drawing.Size(75, 38)
+        Me.btnCetak.TabIndex = 55
+        Me.btnCetak.Text = "Cetak"
+        Me.btnCetak.UseVisualStyleBackColor = True
+        '
         'form_data_user
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(958, 688)
+        Me.ClientSize = New System.Drawing.Size(958, 746)
+        Me.Controls.Add(Me.btnCetak)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.dgvUser)
@@ -340,4 +351,5 @@ Partial Class form_data_user
     Friend WithEvents username As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents password As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnCetak As System.Windows.Forms.Button
 End Class

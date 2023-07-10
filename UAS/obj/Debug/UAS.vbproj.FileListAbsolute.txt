@@ -40,3 +40,7 @@ D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.Resources.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.vbproj.GenerateResource.Cache
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_data_user.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_edit_user.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.vbprojResolveAssemblyReference.cache
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.report_data_user.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\RdlCompile.cache
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\RdlCompile.compiled
