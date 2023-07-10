@@ -140,5 +140,4 @@ Public Class form_fnb
         loadTable()
         Me.Show()
     End Sub
-
 End Class

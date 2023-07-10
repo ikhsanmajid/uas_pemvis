@@ -67,25 +67,29 @@ Partial Class form_error_client
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.keterangan_add)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(18, 18)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(751, 121)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox1.Size = New System.Drawing.Size(1126, 186)
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tambah Client PC"
         '
         'ipaddress_add
         '
-        Me.ipaddress_add.Location = New System.Drawing.Point(157, 39)
+        Me.ipaddress_add.Location = New System.Drawing.Point(236, 60)
+        Me.ipaddress_add.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ipaddress_add.Name = "ipaddress_add"
-        Me.ipaddress_add.Size = New System.Drawing.Size(202, 20)
+        Me.ipaddress_add.Size = New System.Drawing.Size(301, 26)
         Me.ipaddress_add.TabIndex = 30
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(630, 80)
+        Me.Button1.Location = New System.Drawing.Point(945, 123)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(109, 23)
+        Me.Button1.Size = New System.Drawing.Size(164, 35)
         Me.Button1.TabIndex = 29
         Me.Button1.Text = "Simpan Client Baru"
         Me.Button1.UseVisualStyleBackColor = True
@@ -94,58 +98,65 @@ Partial Class form_error_client
         '
         Me.status_add.FormattingEnabled = True
         Me.status_add.Items.AddRange(New Object() {"Normal", "Ada kerusakan"})
-        Me.status_add.Location = New System.Drawing.Point(381, 39)
+        Me.status_add.Location = New System.Drawing.Point(572, 60)
+        Me.status_add.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.status_add.Name = "status_add"
-        Me.status_add.Size = New System.Drawing.Size(131, 21)
+        Me.status_add.Size = New System.Drawing.Size(194, 28)
         Me.status_add.TabIndex = 28
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(378, 24)
+        Me.Label6.Location = New System.Drawing.Point(567, 37)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 13)
+        Me.Label6.Size = New System.Drawing.Size(56, 20)
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Status"
         '
         'kode_pc_add
         '
-        Me.kode_pc_add.Location = New System.Drawing.Point(15, 40)
+        Me.kode_pc_add.Location = New System.Drawing.Point(22, 62)
+        Me.kode_pc_add.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.kode_pc_add.Name = "kode_pc_add"
-        Me.kode_pc_add.Size = New System.Drawing.Size(121, 20)
+        Me.kode_pc_add.Size = New System.Drawing.Size(180, 26)
         Me.kode_pc_add.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 24)
+        Me.Label1.Location = New System.Drawing.Point(18, 37)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 20)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Kode PC"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(534, 24)
+        Me.Label3.Location = New System.Drawing.Point(801, 37)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 13)
+        Me.Label3.Size = New System.Drawing.Size(92, 20)
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Keterangan"
         '
         'keterangan_add
         '
-        Me.keterangan_add.Location = New System.Drawing.Point(537, 40)
+        Me.keterangan_add.Location = New System.Drawing.Point(806, 62)
+        Me.keterangan_add.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.keterangan_add.Name = "keterangan_add"
-        Me.keterangan_add.Size = New System.Drawing.Size(202, 20)
+        Me.keterangan_add.Size = New System.Drawing.Size(301, 26)
         Me.keterangan_add.TabIndex = 18
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(154, 23)
+        Me.Label2.Location = New System.Drawing.Point(231, 35)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(87, 20)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "IP Address"
         '
@@ -158,10 +169,11 @@ Partial Class form_error_client
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodeclientDataGridViewTextBoxColumn, Me.IpaddressDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn, Me.KeteranganDataGridViewTextBoxColumn})
         Me.DataGridView1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.DataGridView1.DataSource = Me.StatusclientBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 210)
+        Me.DataGridView1.Location = New System.Drawing.Point(18, 323)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(751, 464)
+        Me.DataGridView1.Size = New System.Drawing.Size(1126, 714)
         Me.DataGridView1.TabIndex = 28
         '
         'KodeclientDataGridViewTextBoxColumn
@@ -196,24 +208,24 @@ Partial Class form_error_client
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem, Me.EditRowToolStripMenuItem, Me.DeleteRowToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(134, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(174, 94)
         '
         'RefreshToolStripMenuItem
         '
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(173, 30)
         Me.RefreshToolStripMenuItem.Text = "Refresh"
         '
         'EditRowToolStripMenuItem
         '
         Me.EditRowToolStripMenuItem.Name = "EditRowToolStripMenuItem"
-        Me.EditRowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EditRowToolStripMenuItem.Size = New System.Drawing.Size(173, 30)
         Me.EditRowToolStripMenuItem.Text = "Edit Row"
         '
         'DeleteRowToolStripMenuItem
         '
         Me.DeleteRowToolStripMenuItem.Name = "DeleteRowToolStripMenuItem"
-        Me.DeleteRowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteRowToolStripMenuItem.Size = New System.Drawing.Size(173, 30)
         Me.DeleteRowToolStripMenuItem.Text = "Delete Row"
         '
         'StatusclientBindingSource
@@ -231,9 +243,11 @@ Partial Class form_error_client
         Me.GroupBox2.Controls.Add(Me.status_filter)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 139)
+        Me.GroupBox2.Location = New System.Drawing.Point(18, 214)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(751, 65)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox2.Size = New System.Drawing.Size(1126, 100)
         Me.GroupBox2.TabIndex = 31
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Filter"
@@ -242,37 +256,41 @@ Partial Class form_error_client
         '
         Me.status_filter.FormattingEnabled = True
         Me.status_filter.Items.AddRange(New Object() {"All", "Normal", "Ada kerusakan"})
-        Me.status_filter.Location = New System.Drawing.Point(64, 29)
+        Me.status_filter.Location = New System.Drawing.Point(96, 45)
+        Me.status_filter.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.status_filter.Name = "status_filter"
-        Me.status_filter.Size = New System.Drawing.Size(185, 21)
+        Me.status_filter.Size = New System.Drawing.Size(276, 28)
         Me.status_filter.TabIndex = 33
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 32)
+        Me.Label5.Location = New System.Drawing.Point(18, 49)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.Size = New System.Drawing.Size(56, 20)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "Status"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(270, 27)
+        Me.Button2.Location = New System.Drawing.Point(405, 42)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(134, 23)
+        Me.Button2.Size = New System.Drawing.Size(201, 35)
         Me.Button2.TabIndex = 31
         Me.Button2.Text = "Filter"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'form_error_client
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(781, 686)
+        Me.ClientSize = New System.Drawing.Size(1172, 1050)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "form_error_client"
         Me.Text = "form_error_client"
         Me.GroupBox1.ResumeLayout(False)
