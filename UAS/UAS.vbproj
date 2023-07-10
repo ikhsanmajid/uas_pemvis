@@ -147,6 +147,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="report_data_transaksi.Designer.vb">
+      <DependentUpon>report_data_transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report_data_transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="report_data_user.Designer.vb">
       <DependentUpon>report_data_user.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -188,6 +194,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="report_data_transaksi.resx">
+      <DependentUpon>report_data_transaksi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report_data_user.resx">
       <DependentUpon>report_data_user.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

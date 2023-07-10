@@ -302,6 +302,21 @@ Public Class form_transaksi
     End Sub
 
     Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
+        Dim query As String = "SELECT * FROM transaksi_warnet ORDER BY id_transaksi ASC"
+        Try
+            report_data_transaksi.DataSet1.Clear()
+            report_data_transaksi.DataSet1.EnforceConstraints = False
+            koneksi()
+            da = New OdbcDataAdapter(query, con)
+            da.Fill(report_data_transaksi.DataSet1.transaksi_warnet)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
 
+        report_data_transaksi.ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+        report_data_transaksi.ReportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent
+        report_data_transaksi.ReportViewer1.ZoomPercent = 100
+        report_data_transaksi.ReportViewer1.RefreshReport()
+        report_data_transaksi.Show()
     End Sub
 End Class

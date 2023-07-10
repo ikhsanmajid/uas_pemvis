@@ -47,3 +47,4 @@ D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\RdlCompile.compiled
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\report_data_user.resx
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\report_data_user.Designer.vb
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\report_data_user.vb
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.report_data_transaksi.resources

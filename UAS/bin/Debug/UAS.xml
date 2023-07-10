@@ -51,6 +51,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:UAS.DataSet1.makanan_minumanRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -63,6 +67,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:UAS.DataSet1.makanan_minumanRowChangeEvent">
 	<summary>
 Row event argument class
@@ -72,6 +80,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:UAS.DataSet1.data_userRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
