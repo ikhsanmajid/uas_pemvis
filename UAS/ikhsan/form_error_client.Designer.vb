@@ -201,19 +201,19 @@ Partial Class form_error_client
         'RefreshToolStripMenuItem
         '
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RefreshToolStripMenuItem.Text = "Refresh"
         '
         'EditRowToolStripMenuItem
         '
         Me.EditRowToolStripMenuItem.Name = "EditRowToolStripMenuItem"
-        Me.EditRowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EditRowToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.EditRowToolStripMenuItem.Text = "Edit Row"
         '
         'DeleteRowToolStripMenuItem
         '
         Me.DeleteRowToolStripMenuItem.Name = "DeleteRowToolStripMenuItem"
-        Me.DeleteRowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteRowToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.DeleteRowToolStripMenuItem.Text = "Delete Row"
         '
         'StatusclientBindingSource

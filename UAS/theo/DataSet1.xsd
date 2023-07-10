@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="transaksi_makanan_minuman" msprop:Generator_TableClassName="transaksi_makanan_minumanDataTable" msprop:Generator_TableVarName="tabletransaksi_makanan_minuman" msprop:Generator_TablePropName="transaksi_makanan_minuman" msprop:Generator_RowDeletingName="transaksi_makanan_minumanRowDeleting" msprop:Generator_RowChangingName="transaksi_makanan_minumanRowChanging" msprop:Generator_RowEvHandlerName="transaksi_makanan_minumanRowChangeEventHandler" msprop:Generator_RowDeletedName="transaksi_makanan_minumanRowDeleted" msprop:Generator_UserTableName="transaksi_makanan_minuman" msprop:Generator_RowChangedName="transaksi_makanan_minumanRowChanged" msprop:Generator_RowEvArgName="transaksi_makanan_minumanRowChangeEvent" msprop:Generator_RowClassName="transaksi_makanan_minumanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_transaksi" msprop:Generator_ColumnVarNameInTable="columnid_transaksi" msprop:Generator_ColumnPropNameInRow="id_transaksi" msprop:Generator_ColumnPropNameInTable="id_transaksiColumn" msprop:Generator_UserColumnName="id_transaksi" type="xs:string" minOccurs="0" />
+              <xs:element name="id_makanan_minuman" msprop:Generator_ColumnVarNameInTable="columnid_makanan_minuman" msprop:Generator_ColumnPropNameInRow="id_makanan_minuman" msprop:Generator_ColumnPropNameInTable="id_makanan_minumanColumn" msprop:Generator_UserColumnName="id_makanan_minuman" type="xs:string" minOccurs="0" />
+              <xs:element name="jumlah" msprop:Generator_ColumnVarNameInTable="columnjumlah" msprop:Generator_ColumnPropNameInRow="jumlah" msprop:Generator_ColumnPropNameInTable="jumlahColumn" msprop:Generator_UserColumnName="jumlah" type="xs:string" minOccurs="0" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

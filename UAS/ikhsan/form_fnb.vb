@@ -107,9 +107,34 @@ Public Class form_fnb
 
     'delete click context menu
     Private Sub DeleteRowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteRowToolStripMenuItem.Click
-        Dim selectedRowIndex As Integer
+        Dim query, nama As String
+        Dim id_delete, selectedRowIndex As Integer
         selectedRowIndex = DataGridView1.CurrentRow.Index
-        MessageBox.Show(DataGridView1.Rows(selectedRowIndex).Cells(1).Value)
+
+        id_delete = DataGridView1.Rows(selectedRowIndex).Cells(0).Value
+        nama = DataGridView1.Rows(selectedRowIndex).Cells(1).Value
+
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete " & nama & "?", "Confirmation", MessageBoxButtons.YesNo)
+
+        If result = DialogResult.Yes Then
+            query = "DELETE FROM makanan_minuman WHERE id='" & id_delete & "'"
+            Try
+                koneksi()
+                Using cmd As New OdbcCommand(query, con)
+                    Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+                    If rowsAffected > 0 Then
+                        MessageBox.Show("Data berhasil dihapus")
+                        loadTable()
+                    Else
+                        MessageBox.Show("Data gagal dihapus")
+                    End If
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Error: ", ex.Message)
+            End Try
+        Else
+
+        End If
     End Sub
 
     'edit click context menu
