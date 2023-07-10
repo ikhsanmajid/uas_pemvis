@@ -149,9 +149,11 @@
     </Compile>
     <Compile Include="report_data_user.Designer.vb">
       <DependentUpon>report_data_user.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="report_data_user.vb">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +190,7 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="report_data_user.resx">
       <DependentUpon>report_data_user.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,6 @@ Partial Class form_transaksi
         Me.hasilUser = New System.Windows.Forms.Label()
         Me.cashbackOutput = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.userInput = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -60,15 +59,30 @@ Partial Class form_transaksi
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.dgvTransaksi = New System.Windows.Forms.DataGridView()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.userInput = New System.Windows.Forms.ComboBox()
+        Me.id_transaksi = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jenis_paket = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.total_harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.diskon = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.total_bayar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnCetak = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvTransaksi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
         '
         Me.PictureBox2.BackgroundImage = Global.UAS.My.Resources.Resources.logo_valorant
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(543, 46)
+        Me.PictureBox2.Location = New System.Drawing.Point(529, 45)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(346, 138)
@@ -88,9 +102,9 @@ Partial Class form_transaksi
         Me.GroupBox1.Controls.Add(Me.hasilJam)
         Me.GroupBox1.Controls.Add(Me.hasilPaket)
         Me.GroupBox1.Controls.Add(Me.hasilUser)
-        Me.GroupBox1.Location = New System.Drawing.Point(543, 213)
+        Me.GroupBox1.Location = New System.Drawing.Point(529, 212)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(346, 435)
+        Me.GroupBox1.Size = New System.Drawing.Size(346, 480)
         Me.GroupBox1.TabIndex = 51
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Hasil"
@@ -99,7 +113,7 @@ Partial Class form_transaksi
         '
         Me.ucapan.AutoSize = True
         Me.ucapan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ucapan.Location = New System.Drawing.Point(111, 388)
+        Me.ucapan.Location = New System.Drawing.Point(111, 406)
         Me.ucapan.Name = "ucapan"
         Me.ucapan.Size = New System.Drawing.Size(131, 20)
         Me.ucapan.TabIndex = 9
@@ -190,7 +204,7 @@ Partial Class form_transaksi
         '
         Me.cashbackOutput.AutoSize = True
         Me.cashbackOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cashbackOutput.Location = New System.Drawing.Point(152, 461)
+        Me.cashbackOutput.Location = New System.Drawing.Point(138, 460)
         Me.cashbackOutput.Name = "cashbackOutput"
         Me.cashbackOutput.Size = New System.Drawing.Size(246, 20)
         Me.cashbackOutput.TabIndex = 50
@@ -201,23 +215,16 @@ Partial Class form_transaksi
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(108, 81)
+        Me.Label11.Location = New System.Drawing.Point(94, 80)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(344, 20)
         Me.Label11.TabIndex = 49
         Me.Label11.Text = "Cashback 5Rb Setiap Pembelian Diatas 100Rb"
         '
-        'userInput
-        '
-        Me.userInput.Location = New System.Drawing.Point(224, 219)
-        Me.userInput.Name = "userInput"
-        Me.userInput.Size = New System.Drawing.Size(248, 26)
-        Me.userInput.TabIndex = 48
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(75, 226)
+        Me.Label10.Location = New System.Drawing.Point(61, 225)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(83, 20)
         Me.Label10.TabIndex = 47
@@ -225,7 +232,7 @@ Partial Class form_transaksi
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(350, 612)
+        Me.btnExit.Location = New System.Drawing.Point(273, 654)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 38)
         Me.btnExit.TabIndex = 46
@@ -237,7 +244,7 @@ Partial Class form_transaksi
         '
         'btnUlangi
         '
-        Me.btnUlangi.Location = New System.Drawing.Point(236, 612)
+        Me.btnUlangi.Location = New System.Drawing.Point(355, 600)
         Me.btnUlangi.Name = "btnUlangi"
         Me.btnUlangi.Size = New System.Drawing.Size(75, 38)
         Me.btnUlangi.TabIndex = 45
@@ -246,7 +253,7 @@ Partial Class form_transaksi
         '
         'btnProses
         '
-        Me.btnProses.Location = New System.Drawing.Point(124, 612)
+        Me.btnProses.Location = New System.Drawing.Point(98, 600)
         Me.btnProses.Name = "btnProses"
         Me.btnProses.Size = New System.Drawing.Size(75, 38)
         Me.btnProses.TabIndex = 44
@@ -255,49 +262,49 @@ Partial Class form_transaksi
         '
         'kembalianOutput
         '
-        Me.kembalianOutput.Location = New System.Drawing.Point(224, 553)
+        Me.kembalianOutput.Location = New System.Drawing.Point(210, 552)
         Me.kembalianOutput.Name = "kembalianOutput"
         Me.kembalianOutput.Size = New System.Drawing.Size(248, 26)
         Me.kembalianOutput.TabIndex = 43
         '
         'bayarInput
         '
-        Me.bayarInput.Location = New System.Drawing.Point(224, 499)
+        Me.bayarInput.Location = New System.Drawing.Point(210, 498)
         Me.bayarInput.Name = "bayarInput"
         Me.bayarInput.Size = New System.Drawing.Size(248, 26)
         Me.bayarInput.TabIndex = 42
         '
         'totalBayarOutput
         '
-        Me.totalBayarOutput.Location = New System.Drawing.Point(224, 415)
+        Me.totalBayarOutput.Location = New System.Drawing.Point(210, 414)
         Me.totalBayarOutput.Name = "totalBayarOutput"
         Me.totalBayarOutput.Size = New System.Drawing.Size(248, 26)
         Me.totalBayarOutput.TabIndex = 41
         '
         'diskonOutput
         '
-        Me.diskonOutput.Location = New System.Drawing.Point(224, 366)
+        Me.diskonOutput.Location = New System.Drawing.Point(210, 365)
         Me.diskonOutput.Name = "diskonOutput"
         Me.diskonOutput.Size = New System.Drawing.Size(248, 26)
         Me.diskonOutput.TabIndex = 40
         '
         'totalHargaOutput
         '
-        Me.totalHargaOutput.Location = New System.Drawing.Point(224, 316)
+        Me.totalHargaOutput.Location = New System.Drawing.Point(210, 315)
         Me.totalHargaOutput.Name = "totalHargaOutput"
         Me.totalHargaOutput.Size = New System.Drawing.Size(248, 26)
         Me.totalHargaOutput.TabIndex = 39
         '
         'jumlahInput
         '
-        Me.jumlahInput.Location = New System.Drawing.Point(224, 267)
+        Me.jumlahInput.Location = New System.Drawing.Point(210, 266)
         Me.jumlahInput.Name = "jumlahInput"
         Me.jumlahInput.Size = New System.Drawing.Size(248, 26)
         Me.jumlahInput.TabIndex = 38
         '
         'hargaInput
         '
-        Me.hargaInput.Location = New System.Drawing.Point(224, 172)
+        Me.hargaInput.Location = New System.Drawing.Point(210, 171)
         Me.hargaInput.Name = "hargaInput"
         Me.hargaInput.Size = New System.Drawing.Size(248, 26)
         Me.hargaInput.TabIndex = 37
@@ -306,7 +313,7 @@ Partial Class form_transaksi
         '
         Me.jenisPaket.FormattingEnabled = True
         Me.jenisPaket.Items.AddRange(New Object() {"Reguler", "VIP", "Battle Arena"})
-        Me.jenisPaket.Location = New System.Drawing.Point(224, 126)
+        Me.jenisPaket.Location = New System.Drawing.Point(210, 125)
         Me.jenisPaket.Name = "jenisPaket"
         Me.jenisPaket.Size = New System.Drawing.Size(248, 28)
         Me.jenisPaket.TabIndex = 36
@@ -314,7 +321,7 @@ Partial Class form_transaksi
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(75, 556)
+        Me.Label9.Location = New System.Drawing.Point(61, 555)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(83, 20)
         Me.Label9.TabIndex = 35
@@ -323,7 +330,7 @@ Partial Class form_transaksi
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(75, 503)
+        Me.Label8.Location = New System.Drawing.Point(61, 502)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(50, 20)
         Me.Label8.TabIndex = 34
@@ -332,7 +339,7 @@ Partial Class form_transaksi
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(75, 418)
+        Me.Label7.Location = New System.Drawing.Point(61, 417)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(89, 20)
         Me.Label7.TabIndex = 33
@@ -341,7 +348,7 @@ Partial Class form_transaksi
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(75, 369)
+        Me.Label6.Location = New System.Drawing.Point(61, 368)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(58, 20)
         Me.Label6.TabIndex = 32
@@ -350,7 +357,7 @@ Partial Class form_transaksi
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(75, 270)
+        Me.Label5.Location = New System.Drawing.Point(61, 269)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 20)
         Me.Label5.TabIndex = 31
@@ -359,7 +366,7 @@ Partial Class form_transaksi
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(75, 319)
+        Me.Label4.Location = New System.Drawing.Point(61, 318)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 20)
         Me.Label4.TabIndex = 30
@@ -368,7 +375,7 @@ Partial Class form_transaksi
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(75, 179)
+        Me.Label3.Location = New System.Drawing.Point(61, 178)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(90, 20)
         Me.Label3.TabIndex = 29
@@ -377,7 +384,7 @@ Partial Class form_transaksi
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(75, 129)
+        Me.Label2.Location = New System.Drawing.Point(61, 128)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(91, 20)
         Me.Label2.TabIndex = 28
@@ -387,25 +394,136 @@ Partial Class form_transaksi
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(141, 46)
+        Me.Label1.Location = New System.Drawing.Point(127, 45)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(277, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "WARNET GGWP GAME CENTER"
         '
+        'dgvTransaksi
+        '
+        Me.dgvTransaksi.AllowUserToAddRows = False
+        Me.dgvTransaksi.AllowUserToDeleteRows = False
+        Me.dgvTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTransaksi.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_transaksi, Me.username, Me.jenis_paket, Me.harga, Me.jumlah, Me.total_harga, Me.diskon, Me.total_bayar})
+        Me.dgvTransaksi.Location = New System.Drawing.Point(65, 728)
+        Me.dgvTransaksi.Name = "dgvTransaksi"
+        Me.dgvTransaksi.ReadOnly = True
+        Me.dgvTransaksi.RowTemplate.Height = 28
+        Me.dgvTransaksi.Size = New System.Drawing.Size(810, 402)
+        Me.dgvTransaksi.TabIndex = 53
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(791, 1163)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(0, 20)
+        Me.Label12.TabIndex = 54
+        '
+        'userInput
+        '
+        Me.userInput.FormattingEnabled = True
+        Me.userInput.Location = New System.Drawing.Point(210, 216)
+        Me.userInput.Name = "userInput"
+        Me.userInput.Size = New System.Drawing.Size(248, 28)
+        Me.userInput.TabIndex = 55
+        '
+        'id_transaksi
+        '
+        Me.id_transaksi.HeaderText = "ID"
+        Me.id_transaksi.Name = "id_transaksi"
+        Me.id_transaksi.ReadOnly = True
+        Me.id_transaksi.Width = 50
+        '
+        'username
+        '
+        Me.username.HeaderText = "Username"
+        Me.username.Name = "username"
+        Me.username.ReadOnly = True
+        '
+        'jenis_paket
+        '
+        Me.jenis_paket.HeaderText = "Jenis Paket"
+        Me.jenis_paket.Name = "jenis_paket"
+        Me.jenis_paket.ReadOnly = True
+        '
+        'harga
+        '
+        Me.harga.HeaderText = "Harga"
+        Me.harga.Name = "harga"
+        Me.harga.ReadOnly = True
+        '
+        'jumlah
+        '
+        Me.jumlah.HeaderText = "Jumlah"
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.ReadOnly = True
+        '
+        'total_harga
+        '
+        Me.total_harga.HeaderText = "Total Harga"
+        Me.total_harga.Name = "total_harga"
+        Me.total_harga.ReadOnly = True
+        '
+        'diskon
+        '
+        Me.diskon.HeaderText = "Diskon"
+        Me.diskon.Name = "diskon"
+        Me.diskon.ReadOnly = True
+        '
+        'total_bayar
+        '
+        Me.total_bayar.HeaderText = "Total Bayar"
+        Me.total_bayar.Name = "total_bayar"
+        Me.total_bayar.ReadOnly = True
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.Location = New System.Drawing.Point(179, 600)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(88, 38)
+        Me.btnRefresh.TabIndex = 56
+        Me.btnRefresh.Text = "Refresh"
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
+        'btnCetak
+        '
+        Me.btnCetak.Location = New System.Drawing.Point(273, 600)
+        Me.btnCetak.Name = "btnCetak"
+        Me.btnCetak.Size = New System.Drawing.Size(75, 38)
+        Me.btnCetak.TabIndex = 57
+        Me.btnCetak.Text = "Cetak"
+        Me.btnCetak.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(192, 654)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 38)
+        Me.btnDelete.TabIndex = 58
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
         'form_transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(930, 728)
+        Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(930, 756)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnCetak)
+        Me.Controls.Add(Me.btnRefresh)
+        Me.Controls.Add(Me.userInput)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.dgvTransaksi)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cashbackOutput)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.userInput)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnUlangi)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnProses)
         Me.Controls.Add(Me.kembalianOutput)
         Me.Controls.Add(Me.bayarInput)
@@ -429,6 +547,7 @@ Partial Class form_transaksi
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.dgvTransaksi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -447,7 +566,6 @@ Partial Class form_transaksi
     Friend WithEvents hasilUser As System.Windows.Forms.Label
     Friend WithEvents cashbackOutput As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents userInput As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
@@ -470,4 +588,18 @@ Partial Class form_transaksi
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents dgvTransaksi As System.Windows.Forms.DataGridView
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents userInput As System.Windows.Forms.ComboBox
+    Friend WithEvents id_transaksi As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents username As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents jenis_paket As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents harga As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents jumlah As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents total_harga As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents diskon As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents total_bayar As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnCetak As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
 End Class

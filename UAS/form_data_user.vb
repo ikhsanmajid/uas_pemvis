@@ -20,6 +20,7 @@ Public Class form_data_user
         cmd.ExecuteNonQuery()
         Try
             MsgBox("Menyimpan data BERHASIL", vbInformation, "INFORMASI")
+            tampil()
         Catch ex As Exception
             MsgBox("Menyimpan data GAGAL", vbInformation, "PERINGATAN")
         End Try

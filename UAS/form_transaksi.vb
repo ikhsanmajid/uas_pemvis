@@ -1,12 +1,90 @@
-﻿Public Class form_transaksi
-    Dim harga As Integer
+﻿Imports System.Data.Odbc
+Public Class form_transaksi
+    Dim con As OdbcConnection
+    Dim dr As OdbcDataReader
+    Dim da As OdbcDataAdapter
+    Dim ds As DataSet
+    Dim dt As DataTable
+    Dim cmd As OdbcCommand
+    Dim hargaPaket As Integer
     Dim totalBayar As Integer
     Dim cashback As Integer
     Dim counterSlideShow As Integer
 
+    Sub koneksi()
+        con = New OdbcConnection
+        con.ConnectionString = "dsn=warnet"
+        con.Open()
+    End Sub
+
+    Sub tampil()
+        dgvTransaksi.Rows.Clear()
+        Try
+            koneksi()
+            da = New OdbcDataAdapter("select * from transaksi_warnet order by id_transaksi asc ", con)
+            dt = New DataTable
+            da.Fill(dt)
+            For Each row In dt.Rows
+                dgvTransaksi.Rows.Add(row(0), row(1), row(2), row(3), row(4), row(5), row(6), row(7))
+            Next
+            dt.Rows.Clear()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub tampilUser()
+        cmd = New OdbcCommand("select username from data_user", con)
+        dr = cmd.ExecuteReader
+        userInput.Items.Clear()
+        Do While dr.Read
+            userInput.Items.Add(dr.Item("username"))
+        Loop
+    End Sub
+
+    Sub simpan()
+        Dim username, jenis_paket As String
+        Dim harga, jumlah, total_harga, diskon, total_bayar As Integer
+        username = userInput.Text
+        jenis_paket = jenisPaket.Text
+        harga = hargaInput.Text
+        jumlah = jumlahInput.Text
+        total_harga = totalHargaOutput.Text
+        diskon = diskonOutput.Text
+        total_bayar = totalBayarOutput.Text
+        koneksi()
+        Dim sql As String = "INSERT INTO transaksi_warnet (username,jenis_paket,harga,jumlah,total_harga,diskon,total_bayar) VALUES (?,?,?,?,?,?,?)"
+
+        Try
+            koneksi()
+            Using cmd As New OdbcCommand(sql, con)
+                cmd.Parameters.AddWithValue("@param1", username)
+                cmd.Parameters.AddWithValue("@param2", jenis_paket)
+                cmd.Parameters.AddWithValue("@param3", harga)
+                cmd.Parameters.AddWithValue("@param4", jumlah)
+                cmd.Parameters.AddWithValue("@param5", total_harga)
+                cmd.Parameters.AddWithValue("@param6", diskon)
+                cmd.Parameters.AddWithValue("@param7", total_bayar)
+
+                Dim rowAffected As Integer = cmd.ExecuteNonQuery()
+
+                If rowAffected > 0 Then
+                    MessageBox.Show("Data Berhasil Ditambahkan")
+                    tampil()
+                Else
+                    MessageBox.Show("Data Gagal Ditambahkan")
+                End If
+            End Using
+
+
+        Catch ex As Exception
+            MessageBox.Show("Data Gagal Ditambahkan" & ex.Message)
+        End Try
+    End Sub
+
     Private Sub form_transaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hargaInput.ReadOnly = True
-        userInput.ReadOnly = True
+        userInput.Enabled = False
         jumlahInput.ReadOnly = True
         totalHargaOutput.ReadOnly = True
         totalBayarOutput.ReadOnly = True
@@ -22,26 +100,30 @@
 
         counterSlideShow = 0
 
+        tampil()
+        tampilUser()
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles jenisPaket.SelectedIndexChanged
-        userInput.ReadOnly = False
+        userInput.Enabled = True
+        tampilUser()
         jumlahInput.Text = ""
         If jenisPaket.Text.Trim = "" Then
             userInput.Text = ""
             hargaInput.Text = ""
-            userInput.ReadOnly = True
+            userInput.Enabled = False
         End If
         Select Case jenisPaket.Text.Trim.ToUpper
             Case "REGULER"
-                harga = 6000
-                hargaInput.Text = harga
+                hargaPaket = 6000
+                hargaInput.Text = hargaPaket
             Case "VIP"
-                harga = 10000
-                hargaInput.Text = harga
+                hargaPaket = 10000
+                hargaInput.Text = hargaPaket
             Case "BATTLE ARENA"
-                harga = 13000
-                hargaInput.Text = harga
+                hargaPaket = 13000
+                hargaInput.Text = hargaPaket
         End Select
     End Sub
 
@@ -60,7 +142,7 @@
         End If
         If IsNumeric(jumlahInput.Text) Then
             jumlah = CInt(jumlahInput.Text)
-            totalHarga = jumlah * harga
+            totalHarga = jumlah * hargaPaket
             totalHargaOutput.Text = totalHarga
             diskon = (5 / 100) * totalHarga
             diskonOutput.Text = diskon
@@ -116,7 +198,7 @@
                 hasilBayar.Text = "Bayar             :   Rp." & bayarInput.Text
                 hasilKembalian.Text = "Kembalian      :   Rp." & kembalian
                 ucapan.Text = "Selamat Bermain"
-
+                simpan()
             Else
                 MessageBox.Show("Maaf Uang Anda Kurang Bro", "PERINGATAN")
                 bayarInput.Text = ""
@@ -134,7 +216,7 @@
         bayarInput.Text = ""
         kembalianOutput.Text = ""
         jumlahInput.ReadOnly = True
-        userInput.ReadOnly = True
+        userInput.Enabled = False
         btnProses.Enabled = False
         cashbackOutput.Text = ""
         resetHasil()
@@ -145,7 +227,7 @@
         index.Show()
     End Sub
 
-    Private Sub userInput_TextChanged(sender As Object, e As EventArgs) Handles userInput.TextChanged
+    Private Sub userInput_TextChanged(sender As Object, e As EventArgs)
         jumlahInput.ReadOnly = False
         If userInput.Text.Trim = "" Then
             jumlahInput.Text = ""
@@ -190,5 +272,36 @@
                 PictureBox2.BackgroundImage = My.Resources.lol_logo
 
         End Select
+    End Sub
+
+    Private Sub userInput_SelectedIndexChanged(sender As Object, e As EventArgs) Handles userInput.SelectedIndexChanged
+        jumlahInput.ReadOnly = False
+        If userInput.Text.Trim = "" Then
+            jumlahInput.Text = ""
+            jumlahInput.ReadOnly = True
+        End If
+    End Sub
+
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+        tampil()
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim a As String = dgvTransaksi.Item(0, dgvTransaksi.CurrentRow.Index).Value
+        If a = "" Then
+            MsgBox("Data Nilai yang dihapus belum DIPILIH")
+        ElseIf (MessageBox.Show("Anda yakin menghapus data transaksi=" & a & "...?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) = Windows.Forms.DialogResult.OK) Then
+            koneksi()
+            cmd = New OdbcCommand("delete from transaksi_warnet where id_transaksi='" & a & "'", con)
+            cmd.ExecuteNonQuery()
+            MsgBox("Menghapus data nilai BERHASIL", vbInformation,
+            "INFORMASI")
+            con.Close()
+            tampil()
+        End If
+    End Sub
+
+    Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
+
     End Sub
 End Class
