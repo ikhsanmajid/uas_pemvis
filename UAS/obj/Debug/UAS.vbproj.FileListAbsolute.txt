@@ -23,3 +23,10 @@ C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.vbpro
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_fnb.resources
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_error_client.resources
 C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_edit_client.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.vbprojResolveAssemblyReference.cache
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\RdlCompile.cache
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\RdlCompile.compiled
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_transaksi_fnb.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_report_transaksi.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_data_makanan.resources
+C:\Users\ikhsa\Documents\Visual Studio 2012\Projects\UAS\UAS\obj\Debug\UAS.form_report_data_makanan.resources

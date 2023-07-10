@@ -230,4 +230,5 @@ Public Class form_error_client
         loadTable()
         Me.Show()
     End Sub
+
 End Class

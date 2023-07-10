@@ -34,6 +34,16 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="transaksi_makanan_minuman" msprop:Generator_TableClassName="transaksi_makanan_minumanDataTable" msprop:Generator_TableVarName="tabletransaksi_makanan_minuman" msprop:Generator_RowChangedName="transaksi_makanan_minumanRowChanged" msprop:Generator_TablePropName="transaksi_makanan_minuman" msprop:Generator_RowDeletingName="transaksi_makanan_minumanRowDeleting" msprop:Generator_RowChangingName="transaksi_makanan_minumanRowChanging" msprop:Generator_RowEvHandlerName="transaksi_makanan_minumanRowChangeEventHandler" msprop:Generator_RowDeletedName="transaksi_makanan_minumanRowDeleted" msprop:Generator_RowClassName="transaksi_makanan_minumanRow" msprop:Generator_UserTableName="transaksi_makanan_minuman" msprop:Generator_RowEvArgName="transaksi_makanan_minumanRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_transaksi" msprop:Generator_ColumnVarNameInTable="columnid_transaksi" msprop:Generator_ColumnPropNameInRow="id_transaksi" msprop:Generator_ColumnPropNameInTable="id_transaksiColumn" msprop:Generator_UserColumnName="id_transaksi" type="xs:string" minOccurs="0" />
+              <xs:element name="id_makanan_minuman" msprop:Generator_ColumnVarNameInTable="columnid_makanan_minuman" msprop:Generator_ColumnPropNameInRow="id_makanan_minuman" msprop:Generator_ColumnPropNameInTable="id_makanan_minumanColumn" msprop:Generator_UserColumnName="id_makanan_minuman" type="xs:string" minOccurs="0" />
+              <xs:element name="jumlah" msprop:Generator_ColumnVarNameInTable="columnjumlah" msprop:Generator_ColumnPropNameInRow="jumlah" msprop:Generator_ColumnPropNameInTable="jumlahColumn" msprop:Generator_UserColumnName="jumlah" type="xs:string" minOccurs="0" />
+              <xs:element name="sub_harga" msprop:Generator_ColumnVarNameInTable="columnsub_harga" msprop:Generator_ColumnPropNameInRow="sub_harga" msprop:Generator_ColumnPropNameInTable="sub_hargaColumn" msprop:Generator_UserColumnName="sub_harga" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>
