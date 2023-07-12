@@ -14,6 +14,14 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:UAS.DataSet1.data_userDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:UAS.DataSet1.transaksi_makanan_minumanDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -26,6 +34,14 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:UAS.DataSet1.data_userRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:UAS.DataSet1.transaksi_makanan_minumanRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -35,6 +51,14 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member><member name="T:UAS.DataSet1.status_clientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:UAS.DataSet1.data_userRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:UAS.DataSet1.transaksi_warnetRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -54,6 +78,26 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:UAS.My.Resources.Resources.logo_ls">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UAS.My.Resources.Resources.logo_pb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UAS.My.Resources.Resources.logo_pubg">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UAS.My.Resources.Resources.logo_valorant">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UAS.My.Resources.Resources.lol_logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="T:UAS.My.Resources.Resources">
 	<summary>
