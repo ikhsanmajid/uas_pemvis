@@ -11,7 +11,8 @@
     <AssemblyName>UAS</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -82,28 +83,34 @@
     <Compile Include="DataSet1.vb">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ikhsan\form_edit_client.Designer.vb">
+    <Compile Include="form_data_user.Designer.vb">
+      <DependentUpon>form_data_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_data_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_edit_client.Designer.vb">
       <DependentUpon>form_edit_client.vb</DependentUpon>
     </Compile>
-    <Compile Include="ikhsan\form_edit_client.vb">
+    <Compile Include="form_edit_client.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ikhsan\form_edit_fnb.Designer.vb">
-      <DependentUpon>form_edit_fnb.vb</DependentUpon>
+    <Compile Include="form_edit_user.Designer.vb">
+      <DependentUpon>form_edit_user.vb</DependentUpon>
     </Compile>
-    <Compile Include="ikhsan\form_edit_fnb.vb">
+    <Compile Include="form_edit_user.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ikhsan\form_error_client.Designer.vb">
+    <Compile Include="form_error_client.Designer.vb">
       <DependentUpon>form_error_client.vb</DependentUpon>
     </Compile>
-    <Compile Include="ikhsan\form_error_client.vb">
+    <Compile Include="form_error_client.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ikhsan\form_fnb.Designer.vb">
-      <DependentUpon>form_fnb.vb</DependentUpon>
+    <Compile Include="form_transaksi.Designer.vb">
+      <DependentUpon>form_transaksi.vb</DependentUpon>
     </Compile>
-    <Compile Include="ikhsan\form_fnb.vb">
+    <Compile Include="form_transaksi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="index.vb">
@@ -128,43 +135,60 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="theo\form_transaksi_fnb.Designer.vb">
-      <DependentUpon>form_transaksi_fnb.vb</DependentUpon>
+    <Compile Include="report_data_transaksi.Designer.vb">
+      <DependentUpon>report_data_transaksi.vb</DependentUpon>
     </Compile>
-    <Compile Include="theo\form_transaksi_fnb.vb">
+    <Compile Include="report_data_transaksi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="theo\form_report_transaksi.Designer.vb">
-      <DependentUpon>form_report_transaksi.vb</DependentUpon>
+    <Compile Include="report_data_user.Designer.vb">
+      <DependentUpon>report_data_user.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="theo\form_report_transaksi.vb">
+    <Compile Include="report_data_user.vb">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="theo\form_data_makanan.Designer.vb">
+    <Compile Include="form_data_makanan.Designer.vb">
       <DependentUpon>form_data_makanan.vb</DependentUpon>
     </Compile>
-    <Compile Include="theo\form_data_makanan.vb">
+    <Compile Include="form_data_makanan.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="theo\form_report_data_makanan.Designer.vb">
+    <Compile Include="form_report_data_makanan.Designer.vb">
       <DependentUpon>form_report_data_makanan.vb</DependentUpon>
     </Compile>
-    <Compile Include="theo\form_report_data_makanan.vb">
+    <Compile Include="form_report_data_makanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_report_transaksi.Designer.vb">
+      <DependentUpon>form_report_transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_report_transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_transaksi_fnb.Designer.vb">
+      <DependentUpon>form_transaksi_fnb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_transaksi_fnb.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ikhsan\form_edit_client.resx">
+    <EmbeddedResource Include="form_data_user.resx">
+      <DependentUpon>form_data_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_edit_client.resx">
       <DependentUpon>form_edit_client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ikhsan\form_edit_fnb.resx">
-      <DependentUpon>form_edit_fnb.vb</DependentUpon>
+    <EmbeddedResource Include="form_edit_user.resx">
+      <DependentUpon>form_edit_user.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ikhsan\form_error_client.resx">
+    <EmbeddedResource Include="form_error_client.resx">
       <DependentUpon>form_error_client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ikhsan\form_fnb.resx">
-      <DependentUpon>form_fnb.vb</DependentUpon>
+    <EmbeddedResource Include="form_transaksi.resx">
+      <DependentUpon>form_transaksi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.vb</DependentUpon>
@@ -175,20 +199,29 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="theo\form_transaksi_fnb.resx">
-      <DependentUpon>form_transaksi_fnb.vb</DependentUpon>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="report_data_transaksi.resx">
+      <DependentUpon>report_data_transaksi.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="theo\form_report_transaksi.resx">
-      <DependentUpon>form_report_transaksi.vb</DependentUpon>
+    <EmbeddedResource Include="report_data_user.resx">
+      <DependentUpon>report_data_user.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="theo\form_data_makanan.resx">
+    <EmbeddedResource Include="form_data_makanan.resx">
       <DependentUpon>form_data_makanan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="theo\form_report_data_makanan.resx">
+    <EmbeddedResource Include="form_report_data_makanan.resx">
       <DependentUpon>form_report_data_makanan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="theo\ListTransaksi.rdlc" />
-    <EmbeddedResource Include="theo\ListMakanan.rdlc" />
+    <EmbeddedResource Include="form_report_transaksi.resx">
+      <DependentUpon>form_report_transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_transaksi_fnb.resx">
+      <DependentUpon>form_transaksi_fnb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListMakanan.rdlc" />
+    <EmbeddedResource Include="ListTransaksi.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSet1.xsc">
@@ -213,7 +246,21 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\logo_ls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_pb.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_pubg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_valorant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol_logo.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
