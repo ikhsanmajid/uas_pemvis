@@ -31,9 +31,7 @@ D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.exe
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.pdb
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\bin\Debug\UAS.xml
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_edit_client.resources
-D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_edit_fnb.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_error_client.resources
-D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_fnb.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_transaksi.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.index.resources
 D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.Resources.resources
@@ -75,3 +73,8 @@ D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\UAS Rendi\UAS\obj\Debug\UA
 D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\UAS Rendi\UAS\obj\Debug\UAS.form_report_data_makanan.resources
 D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\UAS Rendi\UAS\obj\Debug\UAS.form_report_transaksi.resources
 D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\UAS Rendi\UAS\obj\Debug\UAS.form_transaksi_fnb.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_data_makanan.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_report_data_makanan.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_report_transaksi.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.form_transaksi_fnb.resources
+D:\College\sem_4\pem_visual\uas\uas_pemvis\UAS\obj\Debug\UAS.formLogin.resources

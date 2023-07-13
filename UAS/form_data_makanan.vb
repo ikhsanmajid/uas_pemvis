@@ -45,7 +45,8 @@ Public Class form_data_makanan
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        End
+        Me.Hide()
+        index.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

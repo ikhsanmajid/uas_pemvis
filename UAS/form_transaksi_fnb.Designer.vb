@@ -81,52 +81,52 @@ Partial Class form_transaksi_fnb
         '
         Me.Button6.Location = New System.Drawing.Point(814, 158)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 25)
+        Me.Button6.Size = New System.Drawing.Size(75, 35)
         Me.Button6.TabIndex = 39
         Me.Button6.Text = "Cetak"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(698, 154)
+        Me.Button5.Location = New System.Drawing.Point(698, 158)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 29)
+        Me.Button5.Size = New System.Drawing.Size(75, 35)
         Me.Button5.TabIndex = 38
         Me.Button5.Text = "Exit"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(582, 154)
+        Me.Button4.Location = New System.Drawing.Point(582, 158)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 29)
+        Me.Button4.Size = New System.Drawing.Size(75, 35)
         Me.Button4.TabIndex = 37
         Me.Button4.Text = "Delete"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(814, 98)
+        Me.Button3.Location = New System.Drawing.Point(814, 95)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 29)
+        Me.Button3.Size = New System.Drawing.Size(75, 35)
         Me.Button3.TabIndex = 36
         Me.Button3.Text = "New"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(698, 98)
+        Me.Button2.Location = New System.Drawing.Point(698, 95)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 29)
+        Me.Button2.Size = New System.Drawing.Size(75, 35)
         Me.Button2.TabIndex = 35
         Me.Button2.Text = "Apply"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(582, 98)
+        Me.Button1.Location = New System.Drawing.Point(582, 95)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.Size = New System.Drawing.Size(75, 35)
         Me.Button1.TabIndex = 34
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = True
@@ -202,7 +202,7 @@ Partial Class form_transaksi_fnb
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "ID TRANSAKSI"
         '
-        'Form1
+        'form_transaksi_fnb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -223,7 +223,7 @@ Partial Class form_transaksi_fnb
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form1"
+        Me.Name = "form_transaksi_fnb"
         Me.Text = "Form1"
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

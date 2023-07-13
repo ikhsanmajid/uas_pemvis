@@ -83,6 +83,12 @@
     <Compile Include="DataSet1.vb">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="formLogin.Designer.vb">
+      <DependentUpon>formLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form_data_user.Designer.vb">
       <DependentUpon>form_data_user.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_data_user.resx">
       <DependentUpon>form_data_user.vb</DependentUpon>
     </EmbeddedResource>
