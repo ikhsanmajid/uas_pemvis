@@ -8,7 +8,7 @@
         If inputUsername.Text = "admin" And inputPassword.Text = "1234" Then
             index.Show()
         Else
-            MsgBox("salah")
+            MsgBox("Maaf username / password yang anda masukkan salah")
         End If
     End Sub
 
